@@ -5,7 +5,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-// A shim to interact with other Openstack object until the MariaDB CR is replaced with Galera
+// MariaDBShim A shim to interact with other Openstack object until the MariaDB CR is replaced with Galera
 func MariaDBShim(m *databasev1beta1.Galera) *databasev1beta1.MariaDB {
 	mariadb := &databasev1beta1.MariaDB{
 		ObjectMeta: metav1.ObjectMeta{

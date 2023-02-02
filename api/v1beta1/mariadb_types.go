@@ -66,5 +66,3 @@ type MariaDBList struct {
 func init() {
 	SchemeBuilder.Register(&MariaDB{}, &MariaDBList{})
 }
-
-
